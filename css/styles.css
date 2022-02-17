@@ -10,7 +10,7 @@ nav {
   position: unset;
   height: auto;
   padding: 0;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 nav ul {
@@ -18,8 +18,8 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   list-style-type: none;
 }
 
@@ -48,3 +48,13 @@ nav li.current a {
   height: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
+
+#title {
+  color: white;
+  font-weight: bold;
+  font-family: monospace;
+  vertical-align: middle;
+}
+#pageName {
+  background-color: black;
+}
