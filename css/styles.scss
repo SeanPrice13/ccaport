@@ -1,17 +1,15 @@
-
+// Import the Poppins font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
-
-body {
+// All code inside the #main-wrapper scope only applies to the index.html file.
+#main-wrapper {
   background: #d3d3d3;
   margin: 0;
   font-family: "Poppins";
-}
 
   nav {
     background: none;
     position: unset;
     height: auto;
-    // width: 100%;
     padding: 0;
     margin: .5em;
 
@@ -19,6 +17,7 @@ body {
       display: flex;
       justify-content: space-evenly;
       list-style-type: none;
+      margin: 0;
     }
 
     a {
@@ -28,11 +27,7 @@ body {
       text-decoration: none;
     }
 
-    ul.primary-nav {
-      margin: 0;
-    }
-
-    li.current a {
+    #current a {
       font-weight: bold;
       color: white;
       background-color: blue;
@@ -46,3 +41,5 @@ body {
     width: 100%;
     height: 100%;
 }
+}
+// Optionally, code can be added below to apply styles to the other html files or a separate css file can be made.
