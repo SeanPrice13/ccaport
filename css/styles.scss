@@ -1,23 +1,24 @@
 // Import the Poppins font
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+// Apply the styles within this scope to all elements unless specified otherwise.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 // All code inside the #main-wrapper scope only applies to the index.html file.
 #main-wrapper {
-  background: #d3d3d3;
-  margin: 0;
   font-family: "Poppins";
 
   nav {
-    background: none;
-    position: unset;
-    height: auto;
-    padding: 0;
+    background: #d3d3d3;
     margin: .5em;
+    border-radius: 1em;
 
     ul {
       display: flex;
       justify-content: space-evenly;
       list-style-type: none;
-      margin: 0;
     }
 
     a {
@@ -37,9 +38,70 @@
     }
   }
 
-#port-frame {
+  #port-frame {
     width: 100%;
-    height: 100%;
-}
+    height: calc(100vh - 47.50004px);
+  }
 }
 // Optionally, code can be added below to apply styles to the other html files or a separate css file can be made.
+#bentley-wrapper {
+  font-family: "Poppins";
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+  }
+
+  #about-section {
+    padding: 2em 4em;
+
+    #about-container {
+      display: flex;
+    }
+
+    img {
+      height: auto;
+      max-width: 10%;
+      border-radius: 10%;
+      box-shadow: 0 0 5px 3px #00000050;
+    }
+
+    p {
+      margin-left: 1em;
+    }
+  }
+
+  #projects-section {
+    display: flex;
+    justify-content: center;
+
+    #proj-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+    
+      .card {
+        width: 30vw;
+        border: 1px solid gray;
+        border-radius: 10%;
+        padding: 1%;
+        background: #d3d3d3;
+        text-align: center;
+        box-shadow: 0 0 5px 4px darkgrey;
+
+        iframe {
+          width: 95%;
+          border-radius: 1em;
+        }
+
+        p {
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+}
