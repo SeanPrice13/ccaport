@@ -123,5 +123,14 @@
 
 #bentley-wrapper #projects-section #proj-container .card p {
   padding: 0.5em;
+<<<<<<< HEAD
+=======
+}
+
+.hello{
+  background-color:peachpuff;
+  font-family: 'Times New Roman', Times, serif;
+  border: 1px solid black;
+>>>>>>> 3d86da3eef2ba405e82e16541dcf201d6cc907a6
 }
 /*# sourceMappingURL=styles.css.map */
